@@ -16,8 +16,15 @@
         >
       </div>
 
-      <h1 class="text-3xl mb-5">Hello, <%= user.name %></h1>
-      <h5 class="mb-5">You can create a new post</h5>
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-md overflow-hidden">
+            <img class="w-full h-full object-cover" src="/images/uploads/<%= user.profilepic %>" alt="">
+          </div>
+
+          <h1 class="text-3xl mb-5">Hello, <%= user.name %></h1>
+        </div>
+      
+      <h5 class="mb-5 mt-3">You can create a new post</h5>
       <form action="/post" method="post">
         <textarea
           placeholder="what's on your mind?"
