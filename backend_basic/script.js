@@ -120,7 +120,7 @@ app.get("/about", (req, res) => {
 
 app.get("/profile", (req, res,next) => {
 //   res.send("Profile Page!");
-    next(new Error('Something went wrong in profile route!'));
+    next(new Error('Something went wrong in the profile route!'));
 });
 
 app.use((err,req,res,next)=>{
